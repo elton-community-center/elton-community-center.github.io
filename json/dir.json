@@ -1,0 +1,17 @@
+{
+    "name": "Service Directory",
+    "path": "",
+    "children": [
+        {
+            "name": "Info Displays",
+            "path": "",
+            "children": [
+                {
+                    "name": "Calendar Slideshow",
+                    "path": "http://127.0.0.1:5500/Meb150828's%20Websites/elton-community-center.github.io/services/info-displays/calender-slideshow/index.html",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
