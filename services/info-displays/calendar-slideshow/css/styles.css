@@ -92,6 +92,7 @@ button:hover {
 }
 
 .screen-darken {
+    display: none;
     position: absolute;
     background-color: #0000009a;
     width: 100%;
