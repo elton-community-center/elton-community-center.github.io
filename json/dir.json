@@ -1,0 +1,17 @@
+{
+    "name": "Service Directory",
+    "path": "",
+    "children": [
+        {
+            "name": "Info Displays",
+            "path": "",
+            "children": [
+                {
+                    "name": "Calendar Slideshow",
+                    "path": "/services/info-displays/calendar-slideshow/index.html",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

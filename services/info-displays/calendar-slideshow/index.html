@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECC SD - calendar-slideshow</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="progress-bar">
+        <div></div>
+        <span id="display-id-hint"></span>
+    </div>
+    <div id="calendar-month" class="calendar frame">
+        <iframe src="https://calendar.google.com/calendar/embed?height=720&wkst=1&ctz=America%2FWinnipeg&showPrint=0&showTz=0&showTabs=0&showNav=0&showTitle=0&src=ZWx0b25jb21tdW5pdHljZW50ZXJAZ21haWwuY29t&amp;color=%234285F4" style="border:solid 1px #777" width="1080" height="720" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div id="calendar-schedule" class="calendar frame">
+        <iframe src="https://calendar.google.com/calendar/embed?height=720&wkst=1&ctz=America%2FWinnipeg&showPrint=0&showTz=0&showTabs=0&showNav=0&showTitle=0&mode=AGENDA&src=ZWx0b25jb21tdW5pdHljZW50ZXJAZ21haWwuY29t&amp;color=%234285F4" style="border:solid 1px #777" width="1080" height="720" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div id="image" class="frame">
+        <img src="../../../img/slideshow-images/ECC Placeholder.png" alt="">
+    </div>
+
+    <div id="slides-container" class="slides-container">
+        <!-- INSERT SLIDES WITH JAVASCRIPT -->
+        <div id="slide" class="slide">
+            <!-- INSERT CONTENT WITH JAVASCRIPT -->
+        </div>
+    </div>
+
+    <div class="screen-darken"></div>
+    <div id="display-remote-setup">
+        <h4>Setup Display Remote</h4>
+        <input type="text" id="display-id-input" placeholder="Enter unique ID here">
+        <p class="subtext display-id-subtext">Make the ID short but memorable and unique to this display</p>
+        <div class="checkbox-container">
+            <span class="checkbox-text">Save ID for easy access (recommended): </span><input type="checkbox" name="saveId" id="save-id" checked="true">
+        </div>
+        <div class="action-buttons">
+            <button type="submit" id="start-button" disabled="true">Start</button>
+            <button type="reset" id="cancel-button">Cancel</button>
+        </div>
+        <p id="error-msg" style="color: red; display: none;">Must be logged in to start the display remote</p>
+        <a href="../../../html/login/" id="login-link">Login</a>
+        <span id="prompt-close-timer" class="subtext">This prompt will close in 20 seconds</span>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/display.js"></script>
+</body>
+</html>

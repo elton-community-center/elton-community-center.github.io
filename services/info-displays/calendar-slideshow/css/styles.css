@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
+
+.subtext {
+    font-size: 12px;
+} 
+.calendar iframe {
+    width: 100%;
+    height: 105vh;
+}
+
+.calendar {
+    width: 100%;
+    height: 105vh;
+}
+
+#image {
+    width: 100%;
+    height: 100vh;
+}
+
+#image img {
+    width: 100%;
+    height: 100vh;
+
+    object-fit: contain;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#progress-bar {
+    height: 20px;
+    width: 100%;
+    background-color: #a5a5a5;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    z-index: 100;
+}
+
+#progress-bar div {
+    height: 20px;
+    width: 0%;
+    background-color: dodgerblue;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#display-id-hint {
+    position: relative;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: fit-content;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 900;
+    color: #000000;
+}
+
+#display-remote-setup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 35px;
+}
+
+.screen-darken {
+    position: absolute;
+    background-color: #0000009a;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+}
+
+#display-remote-setup h4 {
+    margin: 0;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#display-id-input {
+    display: block;
+    margin: auto;
+    width: 230px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 17.5px;
+    background-color: #eee;
+    border: 2px solid #e4e4e4;
+}
+
+.display-id-subtext {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.checkbox-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.checkbox-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.action-buttons button {
+    height: 25px;
+    border-radius: 12px;
+}
+
+#start-button {
+    border: 2px solid #8fad8a;
+}
+
+#cancel-button {
+    border: 2px solid #ad8a8a;
+}
+
+#prompt-close-timer {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
